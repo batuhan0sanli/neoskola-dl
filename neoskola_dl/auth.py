@@ -1,9 +1,9 @@
 from neoskola_dl.driver import Driver
-from neoskola_dl.config import Config
+from neoskola_dl.constants import Constants
 
 
 class Auth:
-    def __init__(self, email=None, password=None, token=None, config=Config()):
+    def __init__(self, email=None, password=None, token=None, config=Constants()):
         self.email = email
         self.password = password
         self.token = token
