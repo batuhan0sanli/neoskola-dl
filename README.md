@@ -24,7 +24,7 @@ with strangers.
 ### Downloading a course with username and password
 
 ```python
-from neoskola_dl.neoskola import NeoSkola
+from neoskola_dl import NeoSkola
 
 username = "your_username"
 password = "your_password"
@@ -37,7 +37,7 @@ neoskola.download_course(course_url)
 ### Downloading a course with token
 
 ```python
-from neoskola_dl.neoskola import NeoSkola
+from neoskola_dl import NeoSkola
 
 token = "your_token"
 course_url = "https://neoskola.com/courses/your_course_url"
