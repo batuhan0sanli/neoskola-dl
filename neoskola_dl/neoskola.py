@@ -1,4 +1,4 @@
-from neoskola_dl.auth import Auth
+from neoskola_dl.core.auth import Auth
 from neoskola_dl.items.course import Course
 
 

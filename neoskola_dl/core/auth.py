@@ -1,4 +1,4 @@
-from neoskola_dl.driver import Driver
+from neoskola_dl.core.driver import Driver
 from neoskola_dl.constants import Constants
 
 
