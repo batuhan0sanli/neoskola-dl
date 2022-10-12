@@ -63,14 +63,14 @@ class Driver:
         self.driver.execute_script("window.localStorage.removeItem('Meteor.loginToken');")
 
     def new_token(self, email, password):
-        # todo: hatalı şifre girilmesi durumunda token silinmeli ve error fırlatılmalı
         self.driver.get(self.main_url)
         time.sleep(1)
-        self.driver.find_element("id", "top-login").click()  # todo: buraya sleeple beraber 3 kere deneme hakkı koy
+        self.driver.find_element("id", "top-login").click()
         self.driver.find_element("name", "emailAddress").send_keys(email)
         self.driver.find_element("name", "password").send_keys(password)
         time.sleep(1)
         self.driver.find_element("name", "password").submit()
         time.sleep(3)
+        # todo: add invalid username or password check
         self.token = self.driver.execute_script("return window.localStorage.getItem('Meteor.loginToken');")
         return self.token

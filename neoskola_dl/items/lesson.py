@@ -34,6 +34,7 @@ class Quiz:
             options = question_obj.values()
             correct_answer = question_obj[correct_option]
             content += f'{question}\n'
+
             for option in options:
                 content += f'\t{option}\n'
             content += f'\tCorrect answer: {correct_answer}\n\n'

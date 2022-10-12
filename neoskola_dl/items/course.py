@@ -23,9 +23,7 @@ class Course:
             driver.get(self.first_lesson_url)
             time.sleep(5)
             course_info = get_course_info(driver)['data']
-        # import json
-        # with open('test.json', 'r') as f:
-        #     course_info = json.load(f)['data']
+
         self.id = course_info['course']['_id']
         self.name = course_info['course']['seoTitle']
         self.extra_contents = [ExtraContent(**extra_content) for extra_content in course_info['course']['extraContent']]
@@ -33,10 +31,12 @@ class Course:
 
     def download(self):
         pre_path = f'{DOWNLOAD_PATH}/{self.name}'
+
         # Download extra contents
         for index_number, extra_content in enumerate(self.extra_contents):
             index_number += 1
             extra_content.download(f'{pre_path}/extra_contents', index_number)
+
         # Download sections
         for index_number, section in enumerate(self.sections):
             index_number += 1
