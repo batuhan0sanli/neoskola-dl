@@ -32,17 +32,10 @@ class Driver:
             return False
         return True
 
-    def _is_token_valid(self):
-        pass
-
     def is_login(self):
-        # Burada login olup olmadığını kontrol ediyoruz.
-        # Bir flag ile ilk sayfa olup olmadığı kontrol edilebilir. Sadece ilk sayfaysa is_login işlemi yapılır.
-        # Veya bunun yerine ayrı bir sekmede ana sayfaya gidilip login kontrolü yapılabilir.
-        # Eğer login işlemi bitmişse refresh token işlemi yapılabilir.
         if self.driver and len(self.driver.find_elements("id", "profile-fields")) > 0:
             return True
-        return False  # todo: logout yapınca token silinmeli. Burada da silinme işlemi yapılabilir.
+        return False
 
     def get(self, url):
         self.driver.get(url)
