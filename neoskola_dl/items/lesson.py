@@ -1,5 +1,5 @@
-from neoskola_dl.core.download import Downloader
-from neoskola_dl.core.save_file import SaveFile
+from neoskola_dl.core import Downloader
+from neoskola_dl.core import SaveFile
 from neoskola_dl.config import DOWNLOAD_OPTION
 
 

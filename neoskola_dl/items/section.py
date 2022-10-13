@@ -1,4 +1,4 @@
-from neoskola_dl.items.lesson import Lesson
+from neoskola_dl.items import Lesson
 
 
 class Section:

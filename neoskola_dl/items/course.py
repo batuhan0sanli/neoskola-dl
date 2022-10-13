@@ -1,7 +1,7 @@
 import time
-from neoskola_dl.utils.course_utils import get_course_info
-from neoskola_dl.items.extra_content import ExtraContent
-from neoskola_dl.items.section import Section
+from neoskola_dl.utils import get_course_info
+from neoskola_dl.items import ExtraContent
+from neoskola_dl.items import Section
 from neoskola_dl.config import DOWNLOAD_PATH
 
 

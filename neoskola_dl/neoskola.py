@@ -1,5 +1,5 @@
-from neoskola_dl.core.auth import Auth
-from neoskola_dl.items.course import Course
+from neoskola_dl.core import Auth
+from neoskola_dl.items import Course
 
 
 class NeoSkola:

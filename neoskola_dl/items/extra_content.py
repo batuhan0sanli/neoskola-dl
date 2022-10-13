@@ -1,4 +1,4 @@
-from neoskola_dl.core.download import Downloader
+from neoskola_dl.core import Downloader
 
 
 class ExtraContent:
