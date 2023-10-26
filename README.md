@@ -1,3 +1,7 @@
+# ❗ Project Archived ❗
+
+This project is archived and is no longer actively maintained. It may not be compatible with the latest changes in the website, and as a result, it may not function as expected. I have decided to archive this project to indicate that it is no longer under active development.
+
 # Neoskola Course Downloader
 
 A python based utility to download courses from Neoskola for PERSONAL offline use.
